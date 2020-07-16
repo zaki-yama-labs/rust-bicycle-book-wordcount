@@ -13,8 +13,6 @@ categories = ["command-line-utilities"]
 keywords = ["example", "frequency", "text"]
 exclude = ["text.txt", "tests/*"]
 
-[badges]
-github-actions = { repository = "zaki-yama-labs/rust-bicycle-book-wordcount" }
 # 追記ここまで
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
