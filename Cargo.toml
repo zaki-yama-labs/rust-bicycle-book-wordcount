@@ -11,6 +11,7 @@ readme = "README.md"
 repository = "https:/github.com/zaki-yama-labs/rust-bicycle-book-wordcount"
 categories = ["command-line-utilities"]
 keywords = ["example", "frequency", "text"]
+exclude = ["text.txt", "tests/*"]
 
 [badges]
 github-actions = { repository = "zaki-yama-labs/rust-bicycle-book-wordcount" }
