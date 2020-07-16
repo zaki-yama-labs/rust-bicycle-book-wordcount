@@ -2,8 +2,8 @@ use std::env;
 use std::fs::File;
 use std::io::BufReader;
 
-use wordcount::count;
-use wordcount::CountOption;
+use bicycle_book_wordcount::count;
+use bicycle_book_wordcount::CountOption;
 
 fn main() {
     // 1. コマンドラインで指定された引数を読み込む
