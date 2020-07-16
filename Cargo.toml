@@ -1,5 +1,5 @@
 [package]
-name = "bicycle-book-wordcount"
+name = "zaki-yama-bicycle-book-wordcount"
 version = "0.1.0"
 authors = ["Shingo Yamazaki <shingoyamazaki00@gmail.com>"]
 edition = "2018"
