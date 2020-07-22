@@ -17,7 +17,6 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
-    - run: which rustup
     - uses: actions/checkout@v2
 
     - name: Setup Rust
@@ -25,10 +24,7 @@ jobs:
       with:
         profile: minimal
         toolchain: ${{ matrix.rust }}
-    - run: rustc --version
-    - run: cargo --version
-    - run: rustup show
-    - run: rustup toolchain list
+        override: true
     - name: Build
       run: cargo build
     - name: Run tests
