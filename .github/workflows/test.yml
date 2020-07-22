@@ -24,6 +24,8 @@ jobs:
       with:
         profile: minimal
         toolchain: ${{ matrix.rust }}
+    - run: rustc --version
+    - run: cargo --version
     - name: Build
       run: cargo build
     - name: Run tests
