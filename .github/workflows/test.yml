@@ -17,6 +17,7 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
+    - run: which rustup
     - uses: actions/checkout@v2
 
     - name: Setup Rust
