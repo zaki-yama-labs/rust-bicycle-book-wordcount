@@ -24,9 +24,10 @@ jobs:
       with:
         profile: minimal
         toolchain: ${{ matrix.rust }}
-        override: true
     - run: rustc --version
     - run: cargo --version
+    - run: rustup show
+    - run: rustup toolchain list
     - name: Build
       run: cargo build
     - name: Run tests
