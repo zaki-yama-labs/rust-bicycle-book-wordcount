@@ -26,7 +26,11 @@ jobs:
         toolchain: ${{ matrix.rust }}
         override: true
     - name: Build
-      run: cargo build
+      uses: actions-rs/cargo@v1
+      with:
+        command: build
     - name: Run tests
-      run: cargo test
+      uses: actions-rs/cargo@v1
+      with:
+        command: test
       continue-on-error: ${{ matrix.rust == 'nightly' }}
